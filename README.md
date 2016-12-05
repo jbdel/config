@@ -70,7 +70,7 @@ It learns  to map sentences and images into a common embedding space in order to
 ###[Recurrent Convolutional Neural Networks for Scene Labeling](http://jmlr.org/proceedings/papers/v32/pinheiro14.pdf)
 Use recurrent architecture  of the composition of P instances of the “plain” convolutional network 
 
-Similar : [Recurrent Convolutional Neural Network for ]Object Recognition](http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf)
+###[Recurrent Convolutional Neural Network for Object Recognition](http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf)
 
 Character level : (to read)
 
