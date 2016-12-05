@@ -6,7 +6,7 @@ CNN Default
 
 #Base 
 
-[Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)
+###[Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)
 Convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.
 
 
@@ -15,7 +15,7 @@ Our baseline model with all randomly initialized words (CNN-rand) does not perfo
 Similaire : [A convolutional neural network for modelling sentences](https://arxiv.org/pdf/1404.2188.pdf?utm_medium=App.net&utm_source=PourOver)
 
 
-[Relation Extraction: Perspective from Convolutional Neural Networks](http://www.cs.nyu.edu/~thien/pubs/vector15.pdf)
+###[Relation Extraction: Perspective from Convolutional Neural Networks](http://www.cs.nyu.edu/~thien/pubs/vector15.pdf)
 CNNs for Relation Extraction and Relation Classification tasks. In addition to the word vectors, the authors use the relative positions of words to the entities of interest as an input to the convolutional layer. This models assumes that the positions of the entities are given, and that each example input contains one relation. 
 
 
@@ -46,19 +46,19 @@ The word-to-vector representation is used, and convolutional neural networks are
 Uses the encoder - decoder model
 
 
-[Modeling Interestingness with Deep Neural Networks](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/10/604_Paper.pdf)
+###[Modeling Interestingness with Deep Neural Networks](https://www.microsoft.com/en-us/research/wp-content/uploads/2014/10/604_Paper.pdf)
 describe how to learn semantically meaningful representations of sentences that can be used for Information Retrieval. The example given in the papers includes recommending potentially interesting documents to users based on what they are currently reading. The sentence representations are trained based on search engine log data.
 	Similaire :
 A Latent Semantic Model with Convolutional-Pooling Structure for Information Retrieval.
 
 
-[Learning Semantic Representations Using Convolutional Neural Networks for Web Search](https://pdfs.semanticscholar.org/8478/c0f46dd30ef7f4052145983d6d315c2e1f17.pdf)
+###[Learning Semantic Representations Using Convolutional Neural Networks for Web Search](https://pdfs.semanticscholar.org/8478/c0f46dd30ef7f4052145983d6d315c2e1f17.pdf)
 
 
 Hors série mais intéressant :
 
 
-[Grounded Compositional Semantics for Finding and Describing Images with Sentences](https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/download/325/45)
+###[Grounded Compositional Semantics for Finding and Describing Images with Sentences](https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/download/325/45)
 Easy to  produce compositional feature vectors for accurately representing and classifying sentences or images. However, the sentence vectors of previous models cannot accurately represent visually grounded meaning. 
 They introduce a model which uses dependency trees to embed sentences into a vector space in order to retrieve images that are described by those sentences. 
 It learns  to map sentences and images into a common embedding space in order to be able to retrieve one from the other
