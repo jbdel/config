@@ -1,9 +1,3 @@
-# CNN_default
-CNN Default
-
-
-
-
 #Base 
 
 ###[Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)
