@@ -1,7 +1,12 @@
 #Base 
 
+##CNN
+
 ###[ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
+##For object detection
+
+###[OverFeat: Integrated recognition, localization and detection using convolutional networks](https://arxiv.org/pdf/1312.6229v4.pdf)
 
 
 #CNN for NLP:
@@ -71,6 +76,9 @@ It learns  to map sentences and images into a common embedding space in order to
 Use recurrent architecture  of the composition of P instances of the “plain” convolutional network 
 
 ###[Recurrent Convolutional Neural Network for Object Recognition](http://www.cv-foundation.org/openaccess/content_cvpr_2015/app/2B_004.pdf)
+
+[A Recurrent Neural Network For Image Generation](https://arxiv.org/pdf/1502.04623.pdf)
+
 
 Character level : (to read)
 
