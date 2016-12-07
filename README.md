@@ -68,7 +68,9 @@ Easy to  produce compositional feature vectors for accurately representing and c
 They introduce a model which uses dependency trees to embed sentences into a vector space in order to retrieve images that are described by those sentences. 
 It learns  to map sentences and images into a common embedding space in order to be able to retrieve one from the other
 
-
+###[Cross-Lingual Image Caption Generation](https://www.aclweb.org/anthology/P/P16/P16-1168.pdf)
+Ce dont on avait parlé.
+Caption multilingue 
 
 #RNN for Image :
 
