@@ -71,6 +71,8 @@ It learns  to map sentences and images into a common embedding space in order to
 ###[Cross-Lingual Image Caption Generation](https://www.aclweb.org/anthology/P/P16/P16-1168.pdf)
 Ce dont on avait parlé.
 Caption multilingue 
+utilise le crowdsourcing 
+Ils ont fait traduire une petite partie des captions du dataset mscoco et ont fait du transfer learning av l'anglais vers japonnais.
 
 #RNN for Image :
 
