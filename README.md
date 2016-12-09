@@ -90,3 +90,14 @@ Character level : (to read)
 Learning Character-level Representations for Part-of-Speech Tagging.
 Character-level Convolutional Networks for Text Classification
 Character-Aware Neural Language Models.
+
+#multimodal for NLP
+
+Attention-based Multimodal Neural Machine Translation(http://www.statmt.org/wmt16/pdf/W16-2360.pdf)
+
+#datasets 
+
+VisualGenome : https://visualgenome.org/
+Flickr 30k : http://shannon.cs.illinois.edu/DenotationGraph/
+Flickr 30k Entites : http://web.engr.illinois.edu/~bplumme2/Flickr30kEntities/
+MScoco : http://mscoco.org/
