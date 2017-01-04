@@ -6,7 +6,7 @@
     During booting, computer ask to modify secure boot, press any key to do so
     Chose turn off secureboot and set password letter (followed by enter) as prompted
     
-    One on ubuntu desktop
+    Once on ubuntu desktop
     
     1  sudo apt-get --purge remove xserver-xorg-video-nouveau
     2  sudo apt-get install nvidia-367
@@ -74,6 +74,7 @@
   
   Now fill in Makefile.config.example accordingly. What i did:
     - Uncomment use_cudnn line
+    - add /usr/include/hdf5/serial/ to INCLUDE_DIRS := $(PYTHON_INCLUDE) /usr/local/include 
     - Checking cuda-dir is right
     - Checking python_include is right
     - Changing anaconda_home if you use it
