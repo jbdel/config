@@ -1,0 +1,64 @@
+    Chose usb at boot option
+    At menu, on highlight "install ubuntu", press E
+    At the end of line starting with linux, insert nomodeset
+    During install, check box about secureboot, set password.
+    Finish install and restart.
+    During booting, computer ask to modify secure boot, press any key to do so
+    Chose turn off secureboot and set password letter (followed by enter) as prompted
+    
+    One on ubuntu desktop
+    
+    1  sudo apt-get --purge remove xserver-xorg-video-nouveau
+    2  sudo apt-get install nvidia-367
+    3  sudo reboot
+    5  sudo apt-get install linux-headers-$(uname -r)
+    
+    download cuda from official website
+    
+    8  sudo dpkg -i cuda-repo-ubuntu1604-8-0-local_8.0.44-1_amd64.deb 
+    9  sudo apt-get update
+   10  sudo apt-get install cuda
+   11  export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}
+   12  export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64\ ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+   13  cd /usr/local/cuda-8.0/lib64
+   16  cd samples/
+   17  sudo make
+   22  cd 1_Utilities/
+   25  cd deviceQuery
+   36  ./deviceQuery
+   
+   Test devicequery should pass
+   To print more GPU info :
+   
+   37  nvidia-smi 
+   38  ncvv -v
+   
+   To install Cudnn, go to offical website and download, unzip, and go to the unzipped folder
+   Copy files there :
+   
+   57  sudo cp -P lib64/libcudnn* /usr/local/cuda-8.0/lib64
+   62  sudo cp -P include/cudnn.h /usr/local/cuda-8.0/include
+
+
+   42  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+   43  sudo apt-get install --no-install-recommends libboost-all-dev
+
+
+   63  ls
+   64  cd /usr/local/cuda-8.0/
+   65  cd include/
+   66  ls
+   67  cd ..
+   68  cd lib64
+   69  ls
+   70  cd ..
+   71  sudo chmod a+r /lib64/libcudnn*
+   72  sudo chmod a+r lib64/libcudnn*
+   73  python --version
+   74  apt-cache policy python-numpy
+   75  python
+   76  sudo apt-get install python-numpy
+   77  python
+   78  cd ~/Downloads/
+   79  bash Anaconda2-4.2.0-Linux-x86_64.sh 
+   80  history
