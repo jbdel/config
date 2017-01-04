@@ -38,27 +38,54 @@
    
    57  sudo cp -P lib64/libcudnn* /usr/local/cuda-8.0/lib64
    62  sudo cp -P include/cudnn.h /usr/local/cuda-8.0/include
+   64  cd /usr/local/cuda-8.0/
+   72  sudo chmod a+r lib64/libcudnn*
 
+   Config github account (skip if done alrdy)
+   First make ssh key
+   
+   91  ssh-keygen -t rsa -b 4096 -C "jeanbenoit.delbrouck@gmail.com"
+   92  eval "$(ssh-agent -s)"
+   93  ssh-add ~/.ssh/id_rsa
+   84  sudo apt install git
+   94  git config --global user.name "jbdel"
+   95  git config --global user.email jeanbenoit.delbrouck@gmail.com   
 
+   The go to .ssh folder (ctrl+h to show) and copy content of id_rsa.pub and past it in github website (parameters > ssh)
+   
+   To install cafe
+   
    42  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
    43  sudo apt-get install --no-install-recommends libboost-all-dev
+   82  sudo apt-get install libatlas-base-dev
+  125  sudo find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
+  123  cd /usr/lib/x86_64-linux-gnu/
+  133  sudo ln -s libhdf5_serial.so.10.1.0 libhdf5.so
+  134  sudo ln -s libhdf5_serial_hl.so.10.0.2 libhdf5_hl.so 
 
+   87  cd ~
+   96  git clone git@github.com:BVLC/caffe.git
+   
+   To clone specific branch: 
+   
+   97  git clone -b branch_name git@github.com:BVLC/caffe.git   
+   
+  116  cd caffe
+  
+  Now fill in Makefile.config.example accordingly. What i did:
+    - Uncomment use_cudnn line
+    - Checking cuda-dir is right
+    - Checking python_include is right
+    - Changing anaconda_home if you use it
+    - Uncomment required lines to use Python 3 (default is Python 2)
+    
+  117  cp Makefile.config.example Makefile.config
+  119  make all
+  137  make all
+  138  make test
+  139  make runtest
+  140  history
 
-   63  ls
-   64  cd /usr/local/cuda-8.0/
-   65  cd include/
-   66  ls
-   67  cd ..
-   68  cd lib64
-   69  ls
-   70  cd ..
-   71  sudo chmod a+r /lib64/libcudnn*
-   72  sudo chmod a+r lib64/libcudnn*
-   73  python --version
-   74  apt-cache policy python-numpy
-   75  python
-   76  sudo apt-get install python-numpy
-   77  python
-   78  cd ~/Downloads/
-   79  bash Anaconda2-4.2.0-Linux-x86_64.sh 
-   80  history
+usefull links
+https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide
+http://caffe.berkeleyvision.org/installation.html
