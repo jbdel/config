@@ -85,7 +85,16 @@
   137  make all
   138  make test
   139  make runtest
-  140  history
+  
+  should do 100% success
+  
+  180  sudo apt-get install python-skimage
+  181  sudo apt-get install python-pip
+  182  sudo pip install protobuf
+  183  make pycaffe
+  
+  Then add export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH to your .bashrc
+
 
 usefull links
 https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide
