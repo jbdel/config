@@ -98,6 +98,32 @@
   
   Then add export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH to your .bashrc
 
+####### TENSORFLOW
+
+  333  sudo  pip install tensorflow-gpu
+  then add to your bashrc : 
+  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/extras/CUPTI/lib64"
+  export CUDA_HOME=/usr/local/cuda-8.0
+  
+  To see if it works :
+  
+  Open a terminal and type the following:
+
+    $ python
+    ...
+    >>> import tensorflow as tf
+    >>> hello = tf.constant('Hello, TensorFlow!')
+    >>> sess = tf.Session()
+    >>> print(sess.run(hello))
+    Hello, TensorFlow!
+    >>> a = tf.constant(10)
+    >>> b = tf.constant(32)
+    >>> print(sess.run(a + b))
+    42
+    >>>
+    
+   easy :-)
+
 
 usefull links
 https://github.com/BVLC/caffe/wiki/Ubuntu-16.04-or-15.10-Installation-Guide
