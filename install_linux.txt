@@ -55,10 +55,11 @@
    
    To install cafe
    
-   42  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+   42  sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler 
    43  sudo apt-get install --no-install-recommends libboost-all-dev
    82  sudo apt-get install libatlas-base-dev
    83  sudo apt-get install python-opencv
+   84  sudo apt-get install libgoogle-glog-dev
 
   125  sudo find . -type f -exec sed -i -e 's^"hdf5.h"^"hdf5/serial/hdf5.h"^g' -e 's^"hdf5_hl.h"^"hdf5/serial/hdf5_hl.h"^g' '{}' \;
   123  cd /usr/lib/x86_64-linux-gnu/
