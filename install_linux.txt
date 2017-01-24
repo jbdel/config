@@ -31,6 +31,8 @@
    To print more GPU info :
    
    37  nvidia-smi 
+   put in .bashrc 
+   export PATH=/usr/local/cuda-8.0/bin:$PATH
    38  ncvv -v
    
    To install Cudnn, go to offical website and download, unzip, and go to the unzipped folder
