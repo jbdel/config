@@ -8,8 +8,8 @@
     
     Once on ubuntu desktop
     
-    1  sudo apt-get --purge remove xserver-xorg-video-nouveau
-    2  sudo apt-get install nvidia-367
+    2  sudo apt-get install nvidia-xxx
+    To know which version to install, go to menu, software updater -> settings -> additional drivers -> pick nvidia version proprietary and tested
     3  sudo reboot
     5  sudo apt-get install linux-headers-$(uname -r)
     
